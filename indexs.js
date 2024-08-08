@@ -7,6 +7,7 @@ function startCountdown(startNumber) {
   const intervalId = setInterval(() => {
     currentNumber -= 1;
     countdownElement.textContent = currentNumber;
+    countdownElement.style.fontSize = "500px";
 
     if (currentNumber <= 0) {
       clearInterval(intervalId);
@@ -16,4 +17,4 @@ function startCountdown(startNumber) {
   }, 1000);
 }
 
-startCountdown(10);
+startCountdown(15);
